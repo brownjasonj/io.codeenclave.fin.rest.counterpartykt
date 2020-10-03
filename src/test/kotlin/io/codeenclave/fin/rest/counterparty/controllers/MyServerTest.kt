@@ -29,7 +29,6 @@ class MyServerTest {
 
     @Test
     fun `responds to ping`() {
-        println("This is a simple test")
         assertThat(client(Request(GET, "http://localhost:${server.port()}/ping")), hasStatus(OK))
     }
 
